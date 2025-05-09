@@ -1,0 +1,138 @@
+/* reset Start*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* reset End*/
+
+/* setting color variables */
+:root {
+  --custom-dark-blue: #00328b;
+  --custom-grey-inactive-element: #ececec;
+  --custom-medium-grey: #616161;
+  --custom-dark-grey: #313131;
+  --custom-dark-white: #f6f5f8;
+  --custom-red: #9f0d0d;
+  --cart-green: #2b7f30;
+  --image-background-white: #ffffff;
+  --star-yellow: #fc0;
+  --custom-orange: #fa7806;
+
+  --item-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  /* display: grid;
+  grid-template-rows: 9rem 1fr; */
+  /* gap: 1rem; */
+  color: var(--custom-dark-grey);
+  background-color: var(--custom-dark-white);
+  min-height: 100vh;
+  /* padding: 1rem; */
+}
+
+main {
+  flex: 1;
+  display: flex; /* so its child can flex */
+  flex-direction: column;
+}
+
+/* .store-main-container,
+.cart-main-container {
+  padding: 5rem;
+  padding-top: 0rem;
+} */
+
+.activeLink {
+  color: purple;
+}
+
+button {
+  border: 2px solid black;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+/* a:hover {
+  color: var(--custom-dark-blue);
+} */

@@ -1,0 +1,169 @@
+.cart-item-card-container {
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.5rem; */
+  padding: 1rem;
+
+  height: 12rem;
+  /* width: 15rem; */
+  border: 2px black solid;
+  width: 20rem;
+  font-size: 0.7rem;
+  background-color: var(--image-background-white);
+}
+
+.cart-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left side of the CartItemCard */
+/* ***************************** */
+/* ***************************** */
+
+.cart-item-image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: top; /* Optional: center vertically if you want */
+  overflow: hidden; /* Hide any overflow */
+  height: 60px;
+  min-width: 90px;
+}
+
+.cart-item-image-container img {
+  max-width: 95%;
+  /* display: block; */
+  height: 100%;
+  width: auto;
+}
+
+/* image loading animation */
+.loader {
+  margin: auto;
+  border: 10px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 10px solid #ff7a59;
+  width: 60px;
+  height: 60px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ***************************** */
+/* ***************************** */
+
+/* Right side of the CartItemCard */
+/* ****************************** */
+/* ****************************** */
+
+.cart-item-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 0.5rem;
+  flex: 1;
+}
+
+/* .cart-item-title {
+  min-height: 4.5rem;
+  text-align: center;
+} */
+.cart-item-title {
+  font-weight: bold;
+  min-height: 5rem;
+  width: 100%;
+  /* border: 1px solid black; */
+  font-size: 1.1em;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.cart-item-price {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* ****************************** */
+/* ****************************** */
+
+/* Bottom Buttons Styles */
+/* ********************* */
+/* ********************* */
+
+.cart-item-card-container button {
+  transition-duration: 0.2s;
+}
+.cart-item-card-container button:hover {
+  scale: 1.05;
+}
+.cart-buttons-and-price-container,
+.cart-add-and-remove-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.cart-buttons-and-price-container {
+  flex-direction: column;
+  /* align-items: stretch; */
+}
+.cart-add-and-remove-buttons {
+  flex-direction: row;
+}
+
+.cart-add-and-remove-buttons {
+  border: 2px solid black;
+  font-weight: bold;
+
+  /* font-size: 1.3rem; */
+}
+.cart-add-and-remove-buttons button {
+  border: none;
+
+  /* border-radius: 50%; */
+  /* padding-top: 0;
+  padding-bottom: 0; */
+}
+.cart-add-and-remove-buttons button:hover {
+  /* background-color: var(--cart-green); */
+  scale: 1.6;
+}
+
+.cart-remove-from-cart-button {
+  background-color: var(--custom-red);
+  color: var(--image-background-white);
+  font-size: 0.6rem;
+  /* padding: 0; */
+  margin-top: 0.2rem;
+}
+
+.cart-current-item-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 0.5rem; */
+  padding: 0 0.5rem;
+
+  border: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+
+  background-color: var(--custom-dark-blue);
+  color: var(--custom-dark-white);
+}
+
+/* ********************* */
+/* ********************* */
