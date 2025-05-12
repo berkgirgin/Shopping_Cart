@@ -40,11 +40,12 @@
 .homepage-shop-now-button {
   margin-bottom: 3rem;
   font-weight: bold;
-  color: var(--custom-dark-blue);
+  /* background-color: var(--custom-dark-blue); */
+  color: black;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   transition: 0.2s;
 }
 .homepage-shop-now-button:hover {
-  scale: 1.2;
+  scale: 1.1;
 }

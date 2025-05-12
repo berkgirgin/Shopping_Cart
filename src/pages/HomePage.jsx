@@ -7,7 +7,9 @@ function HomePage() {
 
   return (
     <>
-      <div className={`${classes["homepage-main-container"]}`}>
+      <div
+        className={`${classes["homepage-main-container"]} homepage-main-container`}
+      >
         <div className={`${classes["homepage-titles-container"]}`}>
           <div className={`${classes["homepage-big-title"]}`}>
             FakeBear Shop

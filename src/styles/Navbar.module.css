@@ -8,8 +8,10 @@
 
   background-color: var(--custom-orange);
   /* border-radius: 0 0 1rem 1rem; */
-  padding: 1rem;
-  padding-top: 0.5rem;
+  /* padding: 1rem;
+  padding-top: 0.5rem; */
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .logo-container {

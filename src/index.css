@@ -97,10 +97,15 @@ button {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url(./assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
 
 .main-container {
   display: flex;
   flex-direction: column;
+  font-family: "Quicksand", "Times New Roman", Times, serif;
 
   /* display: grid;
   grid-template-rows: 9rem 1fr; */
@@ -115,13 +120,13 @@ main {
   flex: 1;
   display: flex; /* so its child can flex */
   flex-direction: column;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-/* .store-main-container,
-.cart-main-container {
-  padding: 5rem;
-  padding-top: 0rem;
-} */
+main:has(.homepage-main-container) {
+  max-width: none;
+}
 
 .activeLink {
   color: purple;
@@ -136,3 +141,9 @@ button {
 /* a:hover {
   color: var(--custom-dark-blue);
 } */
+
+@media screen and (min-width: 760px) {
+  .main-container {
+    /* background-color: purple; */
+  }
+}

@@ -1,15 +1,9 @@
 .cart-item-cards-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  gap: 0.2rem;
 }
 
 /* Cart main container */
@@ -19,17 +13,14 @@
 .cart-main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
   align-items: center;
   gap: 1rem;
 
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; 
-  grid-template-rows: auto 1fr;
-  gap: 1rem;  */
-
   padding: 1rem;
   padding-top: 0rem;
+  margin-top: 1rem;
 
   color: var(--custom-dark-grey);
   background-color: var(--custom-dark-white);
@@ -45,6 +36,11 @@
 .checkout-container {
   grid-column: 2; /* Right column */
   grid-row: 2; /* Second row */
+}
+
+.cart-no-item-placeholder {
+  font-style: italic;
+  font-size: 1.3rem;
 }
 
 /* ******************* */
@@ -73,15 +69,19 @@
   /* align-items: center; */
 
   padding: 1rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 20rem;
   width: 20rem;
   font-weight: bold;
+  box-shadow: var(--item-box-shadow);
 }
 
 .checkout-button {
   background-color: var(--cart-green);
   color: var(--custom-dark-white);
+  max-width: 25rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .checkout-header {
@@ -93,3 +93,32 @@
 
 /* ******************* */
 /* ******************* */
+
+@media screen and (min-width: 760px) {
+  .cart-main-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    column-gap: 4rem;
+  }
+  /* children of .cart-item-cards-container  */
+  .cart-page-header-container {
+    grid-column: 1/ 2;
+  }
+  .cart-item-cards-container {
+    grid-column: 1/ 2;
+  }
+  .checkout-container {
+    grid-column: 2/ 3;
+    align-self: start;
+  }
+}
+@media screen and (min-width: 850px) {
+  .checkout-container {
+    padding: 1rem;
+    /* border: 2px solid black; */
+    height: 25rem;
+    width: 25rem;
+    font-weight: bold;
+    box-shadow: var(--item-box-shadow);
+  }
+}

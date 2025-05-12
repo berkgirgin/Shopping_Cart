@@ -10,9 +10,18 @@ function CartPage() {
   const cart = store.cart;
   const currentCart = cart.currentCart;
 
-  const cartItemsCards = currentCart.map((item, index) => {
-    return <CartItemCard key={item.id} item={item} />;
-  });
+  // const cartItemsCards = currentCart.map((item, index) => {
+  //   return <CartItemCard key={item.id} item={item} />;
+  // });
+
+  const cartItemsCards =
+    currentCart.length > 0 ? (
+      currentCart.map((item) => <CartItemCard key={item.id} item={item} />)
+    ) : (
+      <div className={`${classes["cart-no-item-placeholder"]}`}>
+        There is no item in the cart {":("}
+      </div>
+    );
 
   const totalCartCount = cart.getTotalCartCount();
 
