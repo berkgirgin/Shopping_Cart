@@ -21,6 +21,7 @@
   background-color: brown;
   background-color: var(--image-background-white);
   box-shadow: var(--item-box-shadow);
+  border-radius: var(--item-border-radius);
 }
 
 /* Image styles */

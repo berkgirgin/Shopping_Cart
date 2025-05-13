@@ -11,6 +11,15 @@ function NavBar() {
   const cart = store.cart;
 
   const totalItemsInCart = cart.getTotalCartCount();
+  const shoppingCartLogoHTML = (
+    <div className={`${classes["shoppingbasket"]}`}>
+      <div className={`${classes["top"]}`}></div>
+      <div className={`${classes["bottom"]}`}></div>
+      <div className={`${classes["left"]}`}></div>
+      <div className={`${classes["right"]}`}></div>
+      <div className={`${classes["basketitems"]}`}>{totalItemsInCart}</div>
+    </div>
+  );
 
   return (
     <>
@@ -51,7 +60,8 @@ function NavBar() {
               Cart
             </NavLink>
             <div className={`${classes["cart-count"]}`}>
-              <b> {totalItemsInCart}</b>
+              {/* <b> {totalItemsInCart}</b> */}
+              {shoppingCartLogoHTML}
             </div>
           </div>
         </div>

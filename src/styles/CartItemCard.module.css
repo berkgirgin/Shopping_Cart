@@ -7,7 +7,7 @@
   height: 12rem;
   /* width: 15rem; */
   border: 2px var(--custom-grey-inactive-element) solid;
-  border-radius: 1rem;
+  border-radius: var(--item-border-radius);
   width: 20rem;
   font-size: 0.7rem;
   background-color: var(--image-background-white);
@@ -124,7 +124,6 @@
 
 .cart-buttons-and-price-container {
   flex-direction: column;
-  /* align-items: stretch; */
 }
 .cart-add-and-remove-buttons {
   flex-direction: row;
@@ -133,18 +132,11 @@
 .cart-add-and-remove-buttons {
   border: 2px solid black;
   font-weight: bold;
-
-  /* font-size: 1.3rem; */
 }
 .cart-add-and-remove-buttons button {
   border: none;
-
-  /* border-radius: 50%; */
-  /* padding-top: 0;
-  padding-bottom: 0; */
 }
 .cart-add-and-remove-buttons button:hover {
-  /* background-color: var(--cart-green); */
   scale: 1.6;
 }
 
