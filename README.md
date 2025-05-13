@@ -1,12 +1,41 @@
-# React + Vite
+# Project: Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Shopping Cart** project is created according to the assignment from **The Odin Project** [course](https://www.theodinproject.com/paths/full-stack-javascript/courses/react).
+<br>
 
-Currently, two official plugins are available:
+This website is a basic mock-up of an e-commerce website that sells a wide range of products. It was a nice way of practicing my newly acquired React skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Preview](src/assets/images/app_screenshot_mobile.png)
 
-## Expanding the ESLint configuration
+### 🔗 **Live preview** of the project is [here](https://berk-shopping-cart-app.netlify.app).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Built with**
+
+- React
+- React Router
+- Vite
+
+## **Features**
+
+1. **Navigation**: On all pages, the user should see a navigation bar on top, which displays main pages as well as the number of items currently in the cart. Store page also provides sorting by item categories and navigation links for them.
+2. **Cart**: The website has a cart feature where users can add items and then edit out their desired quantities on checkout. The cart is updated instantly and is passed down through StoreProvider.
+3. **Image Loading Animation**: This way of loading images improves upon the user experience by providing loading animation also in line with the color themes of the website.
+4. **Product Search**: The store page includes a search bar, allowing users to quickly find the products they are looking for. The search functionality is fast and reliable, checking for keywords in product titles and categories.
+
+## Getting Started
+
+In order to setup and work on this project on your own, you will need to:
+
+1. Clone this project:  
+   ssh: `git@github.com:berkgirgin/Shopping_Cart.git`
+   <br>
+   https: `https://github.com/berkgirgin/Shopping_Cart.git`
+
+2. Once you have cloned this project, you can install the required dependencies by using:  
+   `npm install`
+
+3. A live demo of the project can be started by using:  
+   `npm run preview`
+
+4. Distribution files can be produced using:  
+   `npm run build`
