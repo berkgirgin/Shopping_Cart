@@ -5,7 +5,7 @@ The **Shopping Cart** project is created according to the assignment from **The 
 
 This website is a basic mock-up of an e-commerce website that sells a wide range of products. It was a nice way of practicing my newly acquired React skills.
 
-![Preview](src/assets/images/app_screenshot_mobile.png)
+<img src="src/assets/images/app_screenshot_mobile.png" alt="Preview" width="200"/>
 
 ### 🔗 **Live preview** of the project is [here](https://berk-shopping-cart-app.netlify.app).
 
